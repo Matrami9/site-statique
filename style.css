@@ -48,6 +48,9 @@ nav{
     padding: 0px 5%;
     height: 78px;
 }
+#burger-menu{
+    display: none;
+}
 img{
     width: auto;
 }
@@ -86,10 +89,6 @@ a{
     text-decoration: none;
     color: white;
     font-family: "Montserrat",sans-serif;
-}
-
-p{
-    
 }
 
 /* #hero{
@@ -154,6 +153,9 @@ p{
     gap:18px;
 }
 
+#button-bar{
+    display: none;
+}
 
 
 
@@ -664,13 +666,58 @@ h4{
         overflow-x: hidden;
     }
     
+h2{
+    text-align: center;
+}
+h4{
+    padding:0;
+}
+
+
     #intro {
         font-size: 38px;
     }
     nav {
         padding: 0 2%;
-       
-    }
+ }
+
+ #burger-menu{
+   display: flex;
+        padding-right: 7%;
+        justify-content: center;
+}
+
+/* #button-bar{
+    position: absolute;
+
+    margin-left: 83%;
+    background-color: #152237;
+
+} */
+
+.active {
+    position: absolute;
+        display: block;
+        flex-direction: column;
+        height: 157px;
+        margin-left: 83%;
+    background-color: #152237;
+}
+
+
+.btn-grp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+header{
+    background-color: #152237;
+}
+
+
     #bar {
         width: 150px;
          display: none;
@@ -680,20 +727,62 @@ nav #log ,nav a{
     display: none;
 }
 
-#avi {
-    width: 53%;
+#hero{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.avi {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 
+.avis-client {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0;
+    padding-bottom: 9%;
+
+}
+
+#avis{
+    flex-direction: column;
+}
 
 
 
 
+#ad-photo {
+   position: initial;
+        width:100%;
+        height: auto;
+}
+
+.all-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+}
+.all-cards2{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    background-color: #152237;
+    color: white;
+}
 
 
+
+.avantages{
+    padding:0;
+    width: 92%;
+
+}
 
 
     .av-element {
@@ -701,9 +790,29 @@ nav #log ,nav a{
         align-items: center;
         gap: 40px;
     }
+   
+    #create{
+        padding:0;
+    }
+
+    #create-title {
+    /* padding: 0px 10rem; */
+    /* text-align: end; */
+    width: 50%;
+    padding:0;
+    padding-top: 30px;
+    width: 92%;
+    text-align: center;
+}
 
     #cr-element {
         flex-direction: column-reverse;
+    }
+
+    #create-photo{
+        position: initial;
+        width:100%;
+        height: auto;
     }
 
     #apropos {
@@ -714,18 +823,69 @@ nav #log ,nav a{
         width: 100%;
         padding: 50px 5%;
     }
+
     .img-section {
-        height: 200px;
+        height: 393px;
+         padding: 50px 5%;
     }
 
-    .footer_inside {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 50px 20px;
-        gap: 40px 20px;
+#input {
+    display: flex;
+    justify-content: center;
+    gap: 53px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#formulaire{
+        height: 100%;
+}
+
+#name,#email,#message{
+    width: 90%;
+}
+
+.footer_inside{
+     flex-direction: column;
+        padding: 20% 25%;
+        height: auto;
+        gap: 30px;
+       
     }
-    .footer_div {
-        width: 45%;
+
+    .footer_inside2, footer #line-footer,#log, #social {
+        display:none;
+    }
+
+    #logo-footer{
+        width: 100%; 
+        height: auto;
+    }
+
+    .footer_div{
+        display: flex;
+    flex-direction: column;
+    gap: 21px;
+    width: 100%;
+    align-items: center;
+    }
+
+    .footer_div h3 {
+        padding-top: 0;
+        font-size: 20px;
+    }
+
+    .footer_div li{
+        width: 100%;
+        padding-top: 0;
+    }
+
+    
+
+    footer{
+        height: auto;
+        padding-bottom: 30px;
     }
 }
 
